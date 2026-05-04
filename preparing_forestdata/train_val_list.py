@@ -21,7 +21,7 @@ def train_val_test_split():
     # Pulled from the .env 
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
-    project_directory = os.getenv('project_path')
+    project_directory = os.getenv('project_dir')
     site = os.getenv('site')
 
     # Train-validation-test split (70 | 15 | 15)

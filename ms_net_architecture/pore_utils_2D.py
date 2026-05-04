@@ -31,7 +31,7 @@ _MAX = 1111111111111115000
 # Loading environment variables
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)
-directory = os.getenv("project_path")
+directory = os.getenv("project_dir")
 
 
 def load_hparams(yaml_loc):

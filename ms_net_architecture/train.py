@@ -33,7 +33,7 @@ def setup_environment():
     """
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
-    directory = os.getenv('project_path')
+    directory = os.getenv('project_dir')
     site = os.getenv('site')
     return directory, site
 
@@ -109,7 +109,7 @@ def load_or_create_model(params, net_dict):
     """
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
-    directory = os.getenv('project_path')
+    directory = os.getenv('project_dir')
     output_directory = os.path.join(directory, "outputs")
     os.makedirs(output_directory, exist_ok=True)
 

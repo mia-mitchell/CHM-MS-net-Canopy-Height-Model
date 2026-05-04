@@ -31,7 +31,7 @@ def matchKeys(data_type):
     """
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
-    project_directory = os.getenv('project_path')
+    project_directory = os.getenv('project_dir')
     output_json = os.path.join(project_directory, "inputs", f"{data_type}.json")
 
     wvimg = os.path.join(project_directory, "inputs", "wvimg")
@@ -113,7 +113,7 @@ def matchKeys(data_type):
     with open(output_json, "w") as f:
         json.dump(common_patterns, f, cls=SetEncoder, indent=4)
     print(f"Saved {data_type} mapping to {output_json}")
-    print("Now to rename and create duplicates for ms-net..")
+    print("Now to rename and create duplicates for ms-net...")
 
 
     with open(output_json, "r") as f:

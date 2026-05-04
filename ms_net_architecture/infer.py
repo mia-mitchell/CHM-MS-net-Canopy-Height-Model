@@ -34,7 +34,7 @@ def run_inference(model_loc, use_test_data):
 
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
-    directory = os.getenv('project_path')
+    directory = os.getenv('project_dir')
     utm = os.getenv('utm')
     site = os.getenv('site')
 

@@ -14,7 +14,7 @@ import torch
 from dotenv import load_dotenv, find_dotenv
 
 code_version = 0.00123
-project_directory=os.getenv('project_directory')
+project_directory=os.getenv('project_dir')
 
 def parse_args():
     
