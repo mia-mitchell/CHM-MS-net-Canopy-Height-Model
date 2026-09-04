@@ -1,6 +1,7 @@
 # SatCHM (Satellite Canopy Height Model)
 
 # Motivation
+High-resolution monitoring of forest structure and productivity is essential for effective natural resource management. However, monitoring approaches such as field-based forest inventories or extensive lidar campaigns are costly, time-intensive, and spatially limited. Therefore, inexpensive and accessible methods are needed. SatCHM (Satellite Canopy Height Model) was developed to be an accessible and open-source tool for researchers, allowing for site-specific and temporally flexible predictions of canopy height with limited computational resources. SatCHM requires four inputs: panchromatic satellite imagery, solar and sensor angle metadata of satellite imagery, digital elevation models (DEMs), and lidar-produced CHMs for an area of interest. After SatCHM pre-processes inputs, data is loaded into a collection of convolutional neural networks (CNNs) for image-to-image regression. This ensemble cooperates to yield high-resolution predictions (up to 0.5-meter) of three-dimensional tree structure with discernible tree crowns across a broader defined area of interest. 
 
 These are the required inputs to use **SatCHM**:
 
